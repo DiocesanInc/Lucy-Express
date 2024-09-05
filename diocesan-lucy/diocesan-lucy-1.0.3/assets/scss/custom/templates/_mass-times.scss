@@ -1,0 +1,21 @@
+.page-template-mass-times {
+  .mass-times-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mass-times-title {
+    margin-bottom: 0;
+  }
+
+  .mass-time-day {
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: bold;
+    font-family: var(--font-heading);
+  }
+
+  .mass-time-time {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+}

@@ -1,0 +1,8 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(90% - 60px);
+    height: 100%;
+    align-items: center;
+    @import "site-branding";
+}
