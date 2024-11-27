@@ -54,8 +54,14 @@ function getDefaultPlaceholderImage()
 }
 
 require get_template_directory() . "/update-checker/plugin-update-checker.php";
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://hybrid-updates.diocesanweb.org/hybrids/lucy/theme.json', //Metadata URL.
-    __FILE__, //Full path to the main plugin file.
-    'lucy' //Plugin slug. Usually it's the same as the name of the directory.
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/DiocesanInc/Lucy-Express',
+    __FILE__,
+    'celine'
 );
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
