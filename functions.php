@@ -60,7 +60,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
     'https://github.com/DiocesanInc/Lucy-Express',
     __FILE__,
-    'celine'
+    'lucy'
 );
 
 //Set the branch that contains the stable release.
